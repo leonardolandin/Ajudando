@@ -1,6 +1,6 @@
 <?php 
-	require_once __DIR__."/phpUtils/conexao.php";
-	require_once __DIR__."/phpUtils/operacoes.php";
+	require_once __DIR__."\phpUtils\conexao.php";
+	require_once __DIR__."\phpUtils\operacoes.php";
 
 //Verificar se já existe cadastro
 session_start();

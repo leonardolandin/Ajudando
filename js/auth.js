@@ -1,4 +1,4 @@
-paths = ["/login.php", "/cadastrar.php", "/completar_cadastro.php", "/esqueceu_senha.php"]
+paths = ["/login.php", "/cadastrar.php", "/completar_cadastro.php"]
 for(i=0; i < paths.length; i++) {
     if(window.location.pathname == paths[i]) {
         setTimeout(function() {
@@ -10,7 +10,6 @@ for(i=0; i < paths.length; i++) {
         senha = localStorage.getItem('cadSenha')
         nomeSocial = localStorage.getItem('cadNomeSocial')
         celular = localStorage.getItem('cadCelular')
-        emailRecupera = localStorage.getItem('emailRecupera')
         
         if(window.location.pathname == "/login.php") {
             if(email != null) {
@@ -24,12 +23,6 @@ for(i=0; i < paths.length; i++) {
                 document.getElementById('passid').value = senha;
                 document.getElementById('cadsocial').value = nomeSocial;
                 document.getElementById('cadcell').value = celular;
-            }
-        }
-
-        if(window.location.pathname == "/esqueceu_senha.php") {
-            if(emailRecupera != null) {
-                document.getElementById('emailRec').value = emailRecupera;
             }
         }
     }

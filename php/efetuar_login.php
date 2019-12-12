@@ -1,6 +1,6 @@
 <?php
-	require_once __DIR__."/phpUtils/conexao.php";
-	require_once __DIR__."/phpUtils/operacoes.php";
+	require_once __DIR__."\phpUtils\conexao.php";
+	require_once __DIR__."\phpUtils\operacoes.php";
 session_start();
 
 if($_POST['login']) {

@@ -13,15 +13,14 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="modal-body padtrbl" style="background-image: url('./img/PIC3.jpg');">
-	<?php 	require_once __DIR__."/php/efetuar_novaSenha.php"; ?>
+    <div class="modal-body padtrbl">
         <div class="login-box-body">
 			<p class="login-box-msg">Esqueceu a senha</p>
 			<div class="form-group">
 				<form method="post" id="loginForm">
 					<div class="form-group ">
 						<!----- username -------------->
-						<input name="email" class="form-control" placeholder="Email" id="emailRec" type="email" autocomplete="off" />
+						<input name="email" class="form-control" placeholder="Email" id="loginid" type="email" autocomplete="off" />
 						<span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
 						<!---Alredy exists  ! -->
 					</div>
@@ -31,13 +30,13 @@
 							</div>
 						</div>
 						<div class="col-xs-12" style="text-align: center;">
-							<input type="submit" value="Enviar" class="btn btn-green btn-block btn-flat" name="enviar">
+							<input type="submit" value="Enviar" class="btn btn-green btn-block btn-flat">
 						</div>
 					</div>
 				</form>
+				<?php require "esqueci.php"; ?>
 			</div>
         </div>
-	</div>
-	<script src="js/auth.js"></script>
+    </div>
 </body>
 </html>

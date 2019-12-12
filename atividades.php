@@ -37,7 +37,7 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="./atividades.php">Atividades</a></li>
+          <li><a href="./atividade.html">Atividades</a></li>
           <li><a href="./precisa.html">Precisa decidir</a></li>
           <li><a href="./premium.html">Premium</a></li>
           <li><a href="./configuracao.html">Configurações</a></li>

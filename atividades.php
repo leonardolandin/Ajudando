@@ -102,7 +102,7 @@
   </div>
   <!--/ Modal box-->
   <!--Feature-->
-<div style="margin-top: 20px; display: flex; justify-content: center; margin-bottom: 20px;">
+<div style="margin-top: 50px; display: flex; justify-content: center; margin-bottom: 20px;">
   <form method="post" enctype="multipart/form-data" style="border: 2px solid black; width: 520px; padding: 19px; border-radius: 4px;">
     <p style="text-align: center; font-weight: bold;">Enviando Atividades Pedagógicas</p>
       Selecione o arquivo o arquivo:<input type="file" required name="arquivo"></br>

@@ -1,7 +1,7 @@
 <?php
 if(isset($_FILES['arquivo'])){
-	require "conexao.php";
-	require "operacoes.php";
+	require_once __DIR__."/php/phpUtils/conexao.php";
+	require_once __DIR__."/php/phpUtils/operacoes.php";
 	$nome = $_FILES['arquivo'];
 	$direc = "upload/";
 	$extensao = strtolower(substr($_FILES['arquivo']['name'], -4));

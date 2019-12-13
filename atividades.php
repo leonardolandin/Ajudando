@@ -24,8 +24,35 @@
 </head>
 
 <body>
+
+  <div class="background-modal" id='modal-container' onclick="closeModal()">
+    <div class="modal-download" onclick="closeModalInside(event)">
+      <img src="./upload/29.png" alt="" class="images">
+      <div class="description">
+        <div style="margin-bottom: 0px;">
+          <div>
+            <label>Nome do Arquivo</label>
+            <span>NOME DO ARQUIVO PHP</span>
+          </div>
+          <div>
+            <label>Nome do Autor</label>
+            <span>NOME DO AUTOR PHP</span>
+          </div>
+          <div>
+            <label>Resolução</label>
+            <span>RESOLUÇÃO PHP</span>
+          </div>
+          <div>
+            <label>Tamanho do Arquivo</label>
+            <span>PESO DO ARQUIVO PHP</span>
+          </div>
+        </div>
+        <a href="" style="width: 65%;"><img src="./img/download.png" style="height: 70px;"></a>
+      </div>
+    </div>
+  </div>
   <!--Navigation bar-->
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top" style="z-index: 1;">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -116,7 +143,7 @@
 	<tr>
 		<?php  require "ativ_download.php"; $count = 0; foreach($nomes as $nome){ ?>
 		<td style="width: 260px;">
-			<p style="margin-right: 70px"><img src='./upload/<?php echo$nome; ?>' width='260' height='200' style="border: 3px solid black; border-radius: 5px;"/></p><a href='./upload/<?php echo$nome; ?>' download="<?php echo$nome; ?>" style="margin-left: 70px; color: #3f3fff;" target="iframe_download" ><img src="./img/download.png" style="width: 20px; margin-bottom: 5px; margin-right: 5px;">Baixar Imagem</a>
+			<p style="margin-right: 70px"><img onclick="openModal()" src='./upload/<?php echo$nome; ?>' width='260' height='200' style="border: 3px solid black; border-radius: 5px; cursor: pointer;"/></p>
 		</td>
 		<?php $count++; if($count == 4){ echo "</tr><tr>"; $count=0; } }?>
 	</tr>
@@ -143,6 +170,7 @@
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/images.js"></script>
   <script src="contactform/contactform.js"></script>
 
 </body>
